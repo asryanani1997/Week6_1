@@ -1,8 +1,13 @@
-x= [1, 1, 2]
+x= [3, 2, 1]
+y= sorted(x)
+z=sorted(x, reverse=True)
 
-if all(x[i]<x[i+1] for i in range(len(x)-1)):
-    print("increasing")
-elif all(x[i]>x[i+1] for i in range(len(x)-1)):
-    print("decreasing")
+if len(x)<=2 or len(set(x))!=len(x):
+    print("Neither")
+elif x==y:
+    print ("Increasing")
+elif x==y:
+    print("Decreasing")
 else:
-    print("neither")
+    print("Neither")
+
